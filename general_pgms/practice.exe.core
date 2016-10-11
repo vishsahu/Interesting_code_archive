@@ -1,0 +1,21 @@
+[main] practice 1000 (0) exception: trapped!
+[main] practice 1000 (0) exception: code 0xC0000005 at 0x405518
+[main] practice 1000 (0) exception: ax 0x0 bx 0x247FEA0 cx 0x0 dx 0x0
+[main] practice 1000 (0) exception: si 0x0 di 0x247FEA0 bp 0x247FE3C sp 0x247FE2C
+[main] practice 1000 (0) exception: exception is: STATUS_ACCESS_VIOLATION
+[main] practice 1000 (0) stack: Stack trace:
+[main] practice 1000 (0) stack: frame 0: sp = 0x247F9EC, pc = 0x6100A2C3
+[main] practice 1000 (0) stack: frame 1: sp = 0x247FA28, pc = 0x77CB6A71
+[main] practice 1000 (0) stack: frame 2: sp = 0x247FA4C, pc = 0x77CB6A43
+[main] practice 1000 (0) stack: frame 3: sp = 0x247FB14, pc = 0x77CB68B7
+[main] practice 1000 (0) stack: frame 4: sp = 0x247FE3C, pc = 0x416D36
+[main] practice 1000 (0) stack: frame 5: sp = 0x247FE54, pc = 0x401393
+[main] practice 1000 (0) stack: frame 6: sp = 0x247FF10, pc = 0x61004402
+[main] practice 1000 (0) stack: frame 7: sp = 0x247FF54, pc = 0x61004420
+[main] practice 1000 (0) stack: frame 8: sp = 0x247FF60, pc = 0x41645A
+[main] practice 1000 (0) stack: frame 9: sp = 0x247FF70, pc = 0x40103A
+[main] practice 1000 (0) stack: frame 10: sp = 0x247FF8C, pc = 0x757F1866
+[main] practice 1000 (0) stack: frame 11: sp = 0x247FF98, pc = 0x77CD68F1
+[main] practice 1000 (0) stack: frame 12: sp = 0x247FFDC, pc = 0x77CD689D
+[main] practice 1000 (0) stack: frame 13: sp = 0x247FFEC, pc = 0x0
+[main] practice 1000 (0) stack: End of stack trace

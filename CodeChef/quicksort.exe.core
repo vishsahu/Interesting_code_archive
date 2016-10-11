@@ -1,0 +1,23 @@
+[main] quicksort 1000 (0) exception: trapped!
+[main] quicksort 1000 (0) exception: code 0xC00000FD at 0x401291
+[main] quicksort 1000 (1) exception: ax 0xFFFFFFFC bx 0x246FF20 cx 0xFFFFFFFF dx 0xA03118C
+[main] quicksort 1000 (0) exception: si 0x0 di 0x0 bp 0x473010 sp 0x473000
+[main] quicksort 1000 (0) exception: exception is: STATUS_STACK_OVERFLOW
+[main] quicksort 1000 (0) stack: Stack trace:
+[main] quicksort 1000 (0) stack: frame 0: sp = 0x472BC0, pc = 0x6100A2C3
+[main] quicksort 1000 (0) stack: frame 1: sp = 0x472BFC, pc = 0x77556A71
+[main] quicksort 1000 (0) stack: frame 2: sp = 0x472C20, pc = 0x77556A43
+[main] quicksort 1000 (0) stack: frame 3: sp = 0x472CE8, pc = 0x775568B7
+[main] quicksort 1000 (0) stack: frame 4: sp = 0x473010, pc = 0x4011BB
+[main] quicksort 1000 (0) stack: frame 5: sp = 0x473034, pc = 0x4011D5
+[main] quicksort 1000 (0) stack: frame 6: sp = 0x473058, pc = 0x4011D5
+[main] quicksort 1000 (0) stack: frame 7: sp = 0x47307C, pc = 0x4011D5
+[main] quicksort 1000 (0) stack: frame 8: sp = 0x4730A0, pc = 0x4011D5
+[main] quicksort 1000 (0) stack: frame 9: sp = 0x4730C4, pc = 0x4011D5
+[main] quicksort 1000 (0) stack: frame 10: sp = 0x4730E8, pc = 0x4011D5
+[main] quicksort 1000 (0) stack: frame 11: sp = 0x47310C, pc = 0x4011D5
+[main] quicksort 1000 (0) stack: frame 12: sp = 0x473130, pc = 0x4011D5
+[main] quicksort 1000 (0) stack: frame 13: sp = 0x473154, pc = 0x4011D5
+[main] quicksort 1000 (0) stack: frame 14: sp = 0x473178, pc = 0x4011D5
+[main] quicksort 1000 (0) stack: frame 15: sp = 0x47319C, pc = 0x4011D5
+[main] quicksort 1000 (0) stack: End of stack trace (more stack frames may be present)

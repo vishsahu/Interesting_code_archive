@@ -1,0 +1,19 @@
+[main] practice 1000 (0) exception: trapped!
+[main] practice 1000 (0) exception: code 0xC0000005 at 0x40115F
+[main] practice 1000 (0) exception: ax 0xA031730 bx 0x246FF20 cx 0xA031710 dx 0x0
+[main] practice 1000 (0) exception: si 0x0 di 0x401000 bp 0x246FF04 sp 0x246FEF4
+[main] practice 1000 (0) exception: exception is: STATUS_ACCESS_VIOLATION
+[main] practice 1000 (0) stack: Stack trace:
+[main] practice 1000 (0) stack: frame 0: sp = 0x246F900, pc = 0x6100A2C3
+[main] practice 1000 (0) stack: frame 1: sp = 0x246F93C, pc = 0x77A4D652
+[main] practice 1000 (0) stack: frame 2: sp = 0x246F960, pc = 0x77A4D624
+[main] practice 1000 (0) stack: frame 3: sp = 0x246FA2C, pc = 0x77A3AE6F
+[main] practice 1000 (0) stack: frame 4: sp = 0x246FF04, pc = 0x61004402
+[main] practice 1000 (0) stack: frame 5: sp = 0x246FF48, pc = 0x61004420
+[main] practice 1000 (0) stack: frame 6: sp = 0x246FF54, pc = 0x41324E
+[main] practice 1000 (0) stack: frame 7: sp = 0x246FF64, pc = 0x40103A
+[main] practice 1000 (0) stack: frame 8: sp = 0x246FF80, pc = 0x76AF3744
+[main] practice 1000 (0) stack: frame 9: sp = 0x246FF94, pc = 0x77A2A064
+[main] practice 1000 (0) stack: frame 10: sp = 0x246FFDC, pc = 0x77A2A02F
+[main] practice 1000 (0) stack: frame 11: sp = 0x246FFEC, pc = 0x0
+[main] practice 1000 (0) stack: End of stack trace

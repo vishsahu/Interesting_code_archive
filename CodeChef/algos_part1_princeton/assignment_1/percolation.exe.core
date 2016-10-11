@@ -1,0 +1,21 @@
+[main] percolation 1000 (0) exception: trapped!
+[main] percolation 1000 (0) exception: code 0xC0000005 at 0x6105AF0F
+[main] percolation 1000 (0) exception: ax 0x6105181C bx 0x634A16B4 cx 0x244FEA0 dx 0x7FFDE000
+[main] percolation 1000 (0) exception: si 0x6105181C di 0x244FE98 bp 0x244FE78 sp 0x244FE4C
+[main] percolation 1000 (0) exception: exception is: STATUS_ACCESS_VIOLATION
+[main] percolation 1000 (0) stack: Stack trace:
+[main] percolation 1000 (0) stack: frame 0: sp = 0x244FA0C, pc = 0x6100A2C3
+[main] percolation 1000 (0) stack: frame 1: sp = 0x244FA48, pc = 0x771C6A71
+[main] percolation 1000 (0) stack: frame 2: sp = 0x244FA6C, pc = 0x771C6A43
+[main] percolation 1000 (0) stack: frame 3: sp = 0x244FB34, pc = 0x771C68B7
+[main] percolation 1000 (0) stack: frame 4: sp = 0x244FE78, pc = 0x6101A4A7
+[main] percolation 1000 (0) stack: frame 5: sp = 0x244FE88, pc = 0x401410
+[main] percolation 1000 (0) stack: frame 6: sp = 0x244FF04, pc = 0x61004402
+[main] percolation 1000 (0) stack: frame 7: sp = 0x244FF54, pc = 0x61004420
+[main] percolation 1000 (0) stack: frame 8: sp = 0x244FF60, pc = 0x40157E
+[main] percolation 1000 (0) stack: frame 9: sp = 0x244FF70, pc = 0x40103A
+[main] percolation 1000 (0) stack: frame 10: sp = 0x244FF8C, pc = 0x75981866
+[main] percolation 1000 (1) stack: frame 11: sp = 0x244FF98, pc = 0x771E68F1
+[main] percolation 1000 (0) stack: frame 12: sp = 0x244FFDC, pc = 0x771E689D
+[main] percolation 1000 (0) stack: frame 13: sp = 0x244FFEC, pc = 0x0
+[main] percolation 1000 (0) stack: End of stack trace

@@ -1,0 +1,20 @@
+[main] hpreet 1000 (0) exception: trapped!
+[main] hpreet 1000 (0) exception: code 0xC0000005 at 0x61052924
+[main] hpreet 1000 (0) exception: ax 0x244FF04 bx 0x244FF30 cx 0x0 dx 0x61061340
+[main] hpreet 1000 (0) exception: si 0x4 di 0x244FEFC bp 0x244FEC0 sp 0x244FEA4
+[main] hpreet 1000 (0) exception: exception is: STATUS_ACCESS_VIOLATION
+[main] hpreet 1000 (0) stack: Stack trace:
+[main] hpreet 1000 (0) stack: frame 0: sp = 0x244FA64, pc = 0x6100A2C3
+[main] hpreet 1000 (0) stack: frame 1: sp = 0x244FAA0, pc = 0x778A6A71
+[main] hpreet 1000 (0) stack: frame 2: sp = 0x244FAC4, pc = 0x778A6A43
+[main] hpreet 1000 (0) stack: frame 3: sp = 0x244FB8C, pc = 0x778A68B7
+[main] hpreet 1000 (0) stack: frame 4: sp = 0x244FEC0, pc = 0x4010EB
+[main] hpreet 1000 (0) stack: frame 5: sp = 0x244FF10, pc = 0x61004402
+[main] hpreet 1000 (0) stack: frame 6: sp = 0x244FF54, pc = 0x61004420
+[main] hpreet 1000 (0) stack: frame 7: sp = 0x244FF60, pc = 0x40123E
+[main] hpreet 1000 (0) stack: frame 8: sp = 0x244FF70, pc = 0x40103A
+[main] hpreet 1000 (0) stack: frame 9: sp = 0x244FF8C, pc = 0x75351866
+[main] hpreet 1000 (0) stack: frame 10: sp = 0x244FF98, pc = 0x778C68F1
+[main] hpreet 1000 (0) stack: frame 11: sp = 0x244FFDC, pc = 0x778C689D
+[main] hpreet 1000 (0) stack: frame 12: sp = 0x244FFEC, pc = 0x0
+[main] hpreet 1000 (0) stack: End of stack trace
