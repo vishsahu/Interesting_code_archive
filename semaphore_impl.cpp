@@ -1,6 +1,6 @@
 class semaphore {
 public:
-  semaphore() : count_{0}, lock_{0} {};
+  semaphore(int n) : count_{n}, lock_{0} {};
   void up();
   void down();
 private:
@@ -10,6 +10,7 @@ private:
 };
 
 void semaphore::up() {
+  // disable interrupts
   while (test_and_set(&lock_))
     ;
   // critical section begins
@@ -23,9 +24,11 @@ void semaphore::up() {
   }
   // end of critical section
   lock_ = 0;
+  // enable interrupts
 }
 
 void semaphore::down() {
+  // disable interrupts
   while (test_and_set(&lock_))
     ;
   // critical section begins
@@ -41,5 +44,6 @@ void semaphore::down() {
     // end of critical section
     lock_ = 0;
   }
+  // enable interrupts
 }
 
