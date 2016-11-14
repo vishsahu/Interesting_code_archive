@@ -25,7 +25,7 @@ void* consumer(void *) {
     printf("Consumer created !\n");
     while (1) {
         pthread_mutex_lock(&lock);
-        if (q.empty())
+        while (q.empty())
             pthread_cond_wait(&cond, &lock);
         int jobId = q.front();
         q.pop();
@@ -40,7 +40,7 @@ void* producer(void *) {
     printf("Producer created !\n");
     while (1) {
         pthread_mutex_lock(&lock);
-        if (q.size() >= MAX_JOBS)
+        while (q.size() >= MAX_JOBS)
             pthread_cond_wait(&cond, &lock);
         int jobId = 100 + rand() % 900; // could be meaningful
         printf("Job ID %d submitted for processing.\n", jobId);
