@@ -8,10 +8,9 @@
 #include <queue>
 using namespace std;
 
-#define MAX_JOBS 5
-
+#define MAX_JOBS 100
 pthread_mutex_t lock;
-pthread_cond_t cond;
+pthread_cond_t pcond, ccond;
 queue<int> q;
 
 void perform_job(int jobId) {
@@ -22,32 +21,36 @@ void perform_job(int jobId) {
 }
 
 void* consumer(void *) {
-    printf("Consumer created !\n");
-    while (1) {
+    printf("Consumer thread running !\n");
+    int i = 0;
+    while (i++ < MAX_JOBS) {
         pthread_mutex_lock(&lock);
         while (q.empty())
-            pthread_cond_wait(&cond, &lock);
+            pthread_cond_wait(&ccond, &lock);
         int jobId = q.front();
         q.pop();
         printf("Job ID %d disptched to worker.\n", jobId);
-        pthread_cond_signal(&cond);
+        pthread_cond_signal(&pcond);
         pthread_mutex_unlock(&lock);
         perform_job(jobId);
     }
+    pthread_exit(0);
 }
 
 void* producer(void *) {
-    printf("Producer created !\n");
-    while (1) {
+    printf("Producer thread running !\n");
+    int i = 0;
+    while (i++ < MAX_JOBS) {
         pthread_mutex_lock(&lock);
         while (q.size() >= MAX_JOBS)
-            pthread_cond_wait(&cond, &lock);
+            pthread_cond_wait(&pcond, &lock);
         int jobId = 100 + rand() % 900; // could be meaningful
         printf("Job ID %d submitted for processing.\n", jobId);
         q.push(jobId);
-        pthread_cond_signal(&cond);
+        pthread_cond_signal(&ccond);
         pthread_mutex_unlock(&lock);
     }
+    pthread_exit(0);
 }
 
 int main(int argc, char* argv[]) {
@@ -55,7 +58,8 @@ int main(int argc, char* argv[]) {
     int ret;
 
     pthread_mutex_init(&lock, NULL);
-    pthread_cond_init(&cond, NULL);
+    pthread_cond_init(&pcond, NULL);
+    pthread_cond_init(&ccond, NULL);
 
     ret = pthread_create(&cons, NULL, consumer, NULL);
     if (ret < 0)
