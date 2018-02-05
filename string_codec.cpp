@@ -1,5 +1,7 @@
 /*
- * About:
+ * About: This program encodes bunch of strings into single string suitable
+ * from transmission as a single payload. Later at receive end, decoder can be
+ * used to get back the original set of strings.
  */
 #include <iostream>
 #include <vector>

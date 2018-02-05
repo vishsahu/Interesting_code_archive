@@ -1,9 +1,9 @@
 /*
- * About: basic implemtation for solving reader-writer problem in OS. This
- * approach 'tries' not to starve any of waiting reading/ writer. The algorithm
+ * About: basic implemtation of solving reader-writer problem in OS. This
+ * approach 'tries' not to starve any of waiting reader/ writer. The algorithm
  * allows any number of readers if there are no writers. In case if there are
- * waiting writer, new readers are made to wait. Writers wait till current
- * readers are not done reading.
+ * waiting writers, new readers are made to wait. Writers wait till current
+ * readers are done with reading.
  */
 #include <stdio.h>
 #include <iostream>
@@ -41,7 +41,7 @@ void rwsem::read_lock() {
         pthread_mutex_unlock(&m);
     }
     else {
-        pthread_cond_wait(&read_ok, &m); // there is writer/waiting writer
+        pthread_cond_wait(&read_ok, &m); // there is a writer waiting
     }
 }
 
